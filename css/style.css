@@ -1,34 +1,58 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
     background-image: url("../imagenes/header.jpg");
     height: 140px;
-    
+
 }
-h1{
+
+h1 {
     color: rgb(19, 18, 18);
     font-size: 70px;
 }
-nav{
+
+nav {
     background-color: aqua;
     height: 40px;
-
 }
-nav a{
+
+@keyframes cambiaColor {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
+
+nav a {
     display: inline-block;
     padding: 10px;
+
 }
 
-nav a:hover{
+nav a:hover {
     background-color: rgb(228, 228, 238);
+    animation: cambiaColor;
+    animation-duration: 4s;
 }
-section{
+
+.activo {
+    color:white;
+    background-color: blue;
+}
+
+
+section {
     background-image: url("../imagenes/fondo.jpeg");
     padding: 20px;
 }
-.section{
-    background-image: url("../imagenes/acerca_de.jpg");
+
+.section {
+    background-image: url("../imagenes/fondo2.jpg");
+    height: 70vh;
 }
